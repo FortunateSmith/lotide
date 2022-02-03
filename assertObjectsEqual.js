@@ -36,13 +36,13 @@ const assertObjectsEqual = function(actual, expected) {
 
   if (result === true) {
     console.log(`✅✅✅Asserstion Passed: ${inspect(actual)} === ${inspect(expected)}.`);
-    } else {
-      console.log(`🛑🛑🛑Asserstion Failed: ${inspect(actual)} !== ${inspect(expected)}.`);
-    }
+  } else {
+    console.log(`🛑🛑🛑Asserstion Failed: ${inspect(actual)} !== ${inspect(expected)}.`);
+  }
 };
 
 assertObjectsEqual({1:'alabaster', 2: 'basalt'}, {1:'alabaster', 2: 'basalt'}); // => true
 assertObjectsEqual({1:'alabaster', 2: 'basalt'}, {1:'alabaster', 2: 'basalt', 3: 'corundum'}); // => false
 assertObjectsEqual({1:'quartz', 2: ['basalt']}, {1:'quartz', 2: 'basalt'});  //=> false
-assertObjectsEqual({1:'a', 2: [1,2,3]}, {1:'a', 2: [1,2,3]}); // => true
-assertObjectsEqual({1:'apple', 2: 'banana'}, { 2: 'banana',1:'apple'}); //=> true
+// assertObjectsEqual({1:'a', 2: [1,2,3]}, {1:'a', 2: [1,2,3]}); // => true
+// assertObjectsEqual({1:'apple', 2: 'banana'}, { 2: 'banana',1:'apple'}); //=> true
