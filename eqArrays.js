@@ -1,8 +1,8 @@
 const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅✅✅Asserstion Passed: ${actual} === ${expected}.`)
     : console.log(`🛑🛑🛑Asserstion Failed: ${actual} !== ${expected}.`);
-  
 };
+
 
 const eqArrays = function(array1, array2) {
 
