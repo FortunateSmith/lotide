@@ -41,6 +41,8 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
+
 assertObjectsEqual({1:'alabaster', 2: 'basalt'}, {1:'alabaster', 2: 'basalt'}); // => true
 assertObjectsEqual({1:'alabaster', 2: 'basalt'}, {1:'alabaster', 2: 'basalt', 3: 'corundum'}); // => false
 assertObjectsEqual({1:'quartz', 2: ['basalt']}, {1:'quartz', 2: 'basalt'});  //=> false
