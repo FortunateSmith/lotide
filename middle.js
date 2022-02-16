@@ -8,6 +8,8 @@ const middle = function(array) {
   } else if (array.length > 2 && array.length % 2 === 0) {
     midElem.push(array[(array.length / 2) - 1]);
     midElem.push(array[array.length / 2]);
+  } else {
+    return undefined;
   }
   return midElem;
 };
