@@ -1,6 +1,3 @@
-
-const assertEqual = require('./assertEqual');
-
 // Create a function head which returns the first item in the array.
 
 const head = function(array) {
@@ -9,6 +6,4 @@ const head = function(array) {
 
 };
 
-
-
-  
+module.exports = head;
