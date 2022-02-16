@@ -23,16 +23,19 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-const words = ['the', 'finger', 'that', 'points', 'at', 'the', 'moon']
+
+const words = ['the', 'finger', 'that', 'points', 'at', 'the', 'moon'];
 const map = function(array, callback) {
-  const results = []
+  const results = [];
   for (let item of array) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 const result1 = map(words, word => word[0]);
-console.log(result1);
 
-assertArraysEqual(result1, true);
+module.exports = map;
+
+console.log(result1);
+assertArraysEqual(result1, ['t', 'f', 't', 'p', 'a', 't', 'm']);
