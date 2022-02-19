@@ -1,11 +1,5 @@
 const assertObjectsEqual = require("./assertObjectsEqual");
 
-const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`✅✅✅Asserstion Passed: ${actual} === ${expected}.`)
-    : console.log(`🛑🛑🛑Asserstion Failed: ${actual} !== ${expected}.`);
-  
-};
-
 // return unique chars in string
 const countLetters = function(string) {
   const newString = string.split(' ').join('');
@@ -25,7 +19,7 @@ const countLetters = function(string) {
   return counter;
 
 };
-module.exports = countLetters;
+
 assertObjectsEqual(countLetters("lighthouse in the house"), {
   l: 1,
   i: 2,
@@ -37,5 +31,7 @@ assertObjectsEqual(countLetters("lighthouse in the house"), {
   s: 2,
   e: 3,
   n: 1,
-}); 
-console.log(countLetters("lighthouse in the house"));
+});
+
+
+module.exports = countLetters;
