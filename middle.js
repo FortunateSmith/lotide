@@ -14,5 +14,7 @@ const middle = function(array) {
   return midElem;
 };
 
+assertArraysEqual(middle(["red", "orange", "yellow", "green"]), ["orange", "yellow"])
+
 module.exports = middle;
 
