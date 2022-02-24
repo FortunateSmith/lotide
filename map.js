@@ -1,29 +1,6 @@
-const eqArrays = function(array1, array2) {
+const assertArraysEqual = require('./assertArraysEqual');
 
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  } return true;
-  
-};
-
-
-const assertArraysEqual = function(actual, expected) {
-  const result = eqArrays(actual, expected);
-
-  if (result === true) {
-    console.log(`✅✅✅Asserstion Passed: ${actual} === ${expected}.`);
-  } else {
-    console.log(`🛑🛑🛑Asserstion Failed: ${actual} !== ${expected}.`);
-  }
-};
-
-
-
+// returns new array from given array and condition
 const words = ['the', 'finger', 'that', 'points', 'at', 'the', 'moon'];
 const map = function(array, callback) {
   const results = [];
@@ -33,9 +10,8 @@ const map = function(array, callback) {
   return results;
 };
 
+// TEST CODE
 const result1 = map(words, word => word[0]);
+assertArraysEqual(result1, ['t', 'f', 't', 'p', 'a', 't', 'm']);
 
 module.exports = map;
-
-console.log(result1);
-assertArraysEqual(result1, ['t', 'f', 't', 'p', 'a', 't', 'm']);
