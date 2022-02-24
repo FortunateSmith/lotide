@@ -1,5 +1,6 @@
 const assertEqual = require('./assertEqual');
 
+// find key when keys are known
 const findKey = (obj, callback) => {
   
   for (const key in obj) {
@@ -11,7 +12,6 @@ const findKey = (obj, callback) => {
 
 
 module.exports = findKey;
-
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
