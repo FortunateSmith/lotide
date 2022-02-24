@@ -1,4 +1,4 @@
-
+// create new array with all elements but first from given array
 const tail = function(array) {
 
   let newArr = [];
