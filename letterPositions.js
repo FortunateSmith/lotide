@@ -1,6 +1,7 @@
 const assertObjectsEqual = require('./assertObjectsEqual');
 const letterPositions = function(sentence) {
 
+// returns object with keys as letter and value as index of letter in given string
   const results = {};
   const newString = sentence.split(' ').join('');
   
